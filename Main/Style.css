@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: myFont;
+    src:url(NEONLEDLight.ttf)
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    color: white;
+}
+
+
+.background {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #06091f, #1B1A55, #22207b);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    padding-top: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #6D67E4;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid cyan;
+}
+
+button:hover {
+    color: cyan;
+    border-color: white;
+}
+
+.logo {
+    color: cyan;
+    font-size: 35px;
+    font-family: "Pacifico", cursive;
+}
+
+span {
+    color: white;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content h2 img {
+    flex: 1;
+    display: inline-block;
+    padding: 10px 50px;
+}
+
+img {
+    padding-top: 3%;
+    padding-right: 8%;
+    width: 400px;
+    height: 100%;
+    animation: naikTurun 2s ease-in-out infinite;
+}
+@keyframes naikTurun {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    padding-left: 12%;
+    text-align: center;
+    font-size: 50px;
+    font-family: myFont;
+    letter-spacing: 5px;
+    color: white;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,rgb(0, 255, 255));
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0%{
+        color: white;
+        text-shadow: 0 0 0px cyan,
+        0 0 10px cyan,
+        0 0 160px cyan;  
+    }
+    100%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 160px cyan,
+        0 0 10px cyan,
+        0 0 0px cyan;
+    }
+}
+
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}   
+

@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    color: white;
+}
+
+.background {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #06091f, #1B1A55, #22207b);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    padding-top: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #6D67E4;
+}
+
+.background button {
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid cyan;
+}
+
+.background button:hover {
+    color: cyan;
+    border-color: white;
+}
+
+.logo {
+    color: cyan;
+    font-size: 35px;
+    font-family: "Pacifico", cursive;
+}
+
+span {
+    color: white;
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    padding-top: 6%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.keterangan {
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="subject"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: cyan;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.content h1 {
+    font-size: 50px;
+    text-align: center;
+    animation: fade-in_h1 3s ease-in-out forwards;
+}
+@keyframes fade-in_h1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.keterangan {
+    animation: fade-in_h1 3s ease-in-out forwards;
+}
+@keyframes fade-in_h1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}

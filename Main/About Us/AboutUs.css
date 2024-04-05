@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    color: white;
+}
+
+.background {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #06091f, #1B1A55, #22207b);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    padding-top: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #6D67E4;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid cyan;
+}
+
+button:hover {
+    color: cyan;
+    border-color: white;
+}
+
+.logo {
+    color: cyan;
+    font-size: 35px;
+    font-family: "Pacifico", cursive;
+}
+
+span {
+    color: white;
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}  
+
+.text {
+    padding: 15% 10%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+text h1 p {
+    flex: 1;
+    display: inline-flex;
+    padding: 20%;
+    justify-content: center;
+}
+
+.text h1 {
+    font-size: 70px;
+    text-align: center;
+    animation: fade-in_h1 3s ease-in-out forwards;
+}
+@keyframes fade-in_h1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.text p {
+    font-size: 20px;
+    animation: fade-in_p 3s ease-in-out forwards;
+}
+@keyframes fade-in_p {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
